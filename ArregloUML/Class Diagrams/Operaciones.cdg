@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Operaciones">
+  <ClassDiagramComponents>
+    <Class name="Arreglo" package="" visibility="public" xPosition="72.0" yPosition="99.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="sumarLista" returnType="int" visibility="public" isStatic="true">
+          <Argument type="int[]" name="lista"/>
+        </Method>
+        <Method name="buscarMayor" returnType="int" visibility="public" isStatic="true">
+          <Argument type="int[][]" name="lista"/>
+        </Method>
+        <Method name="cuentaVocales" returnType="String" visibility="public" isStatic="true">
+          <Argument type="String" name="frase"/>
+        </Method>
+        <Method name="cuentaCaracter" returnType="char" visibility="public" isStatic="true">
+          <Argument type="String" name="frase"/>
+          <Argument type="char" name="letraBuscada"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PruebaArreglo" package="" visibility="public" isStatic="true" xPosition="542.0" yPosition="137.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation name="Usa" source="PruebaArreglo" target="Arreglo" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
